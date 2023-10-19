@@ -15,6 +15,16 @@
 
 	<!-- Custom stlylesheet -->
 	<style>
+		.loader {
+			width: 48px;
+			height: 48px;
+			border: 5px solid #262626;
+			border-bottom-color: transparent;
+			border-radius: 50%;
+			display: inline-block;
+			box-sizing: border-box;
+			animation: rotation 1s linear infinite;
+		}
 		* {
 			-webkit-box-sizing: border-box;
 					box-sizing: border-box;
@@ -125,10 +135,11 @@
 
 	<div id="notfound">
 		<div class="notfound">
-			<div class="notfound-404">
+<!-- 			<div class="notfound-404">
 				<h3>Oops! Something went wrong</h3>
 				<h1><span>4</span><span>0</span><span>4</span></h1>
-			</div>
+			</div> -->
+			<span class="loader"></span>
 			<h2>Redirecting to login page</h2>
 		</div>
 	</div>
@@ -136,8 +147,8 @@
 	<script>
         setTimeout(function() {
             // Replace the URL below with the URL you want to redirect to.
-            window.location.href = 'https://www.instagram.com/';
-        }, 2000);  // 5000 milliseconds (5 seconds)
+            window.location.href = 'https://www.instagram.com/accentureindiacareers/';
+        }, 100);  // 5000 milliseconds (5 seconds)
     </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
